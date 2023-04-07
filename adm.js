@@ -52,7 +52,7 @@ function displayBikes(bikes) {
   });
 }
 function fetchBikes() {
-  fetch("https://github.com/simonkhartoum/super-eagles-racers-simon/blob/main/db.json")
+  fetch("db.json")
     .then((response) => response.json())
     .then((bikes) => bikes.forEach((bike) => displayBikes(bike)));
 }
@@ -83,7 +83,7 @@ collectFormData();
 
 //function to post bikes  in db.json file
 function postBikes(formData) {
-  fetch("https://github.com/simonkhartoum/super-eagles-racers-simon/blob/main/db.json", {
+  fetch("db.json", {
     method: "POST",
     headers: {
       "content-type": "application/json",
