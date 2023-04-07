@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adn.css">
+    <title>admin</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn2.louis.de/dynamic/bikedb/o_pad,w_300,h_300,ha_center,va_center,c_fff/14.18.03.1744.png"type = "image/x-icon">
+</head>
+<body>
+  <div class="adminheader">
+  <h1>THIS IS THE ADMIN SECTION !!</h1>
+  </div>
+      <section class="tableform">
+        <table class="table mt-3">
+          <thead>
+            <tr class="cont">
+              <th scope="col">Id</th>
+              <th scope="col">Image url</th>
+              <th scope="col">Manufacturer </th>
+              <th scope="col">Model</th>
+              <th scope="col">Driver</th>
+              <th scope="col">Mileage</th>
+              <th scope="col">Appearance</th>
+              <th scope="col">Price($)</th>
+              <th scope="col">wins</th>
+              <th scope="col" id="vin">Edit</th>
+              <th scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+    
+          </tbody>
+        </table>
+    </section>
+    <div class="past">
+      <h3>ADD A NEW BIKE + DETAILS USING THE FORM BELOW.</h3>
+    </div>
+    <form id="form">
+      <div class="mb-3">
+        <label for="image" class="form-label">image url</label>
+        <input type="url" class="form-control" id="image" required>
+      </div>
+      <div class="mb-3">
+        <label for="manufacturer" class="form-label">manufacturer</label>
+        <input type="text" class="form-control" id="manufacturer"required>
+      </div>
+      <div class="mb-3">
+        <label for="model" class="form-label">model</label>
+        <input type="text" class="form-control" id="model"required>
+      </div>
+      <div class="mb-3">
+        <label for="driver" class="form-label">drivers name</label>
+        <input type="text" class="form-control" id="driver"required>
+      </div>
+      <div class="mb-3">
+        <label for="mileage" class="form-label">mileage</label>
+        <input type="text" class="form-control" id="mileage"required>
+      </div>
+      <div class="mb-3">
+        <label for="appearance" class="form-label">appearance</label>
+        <input type="text" class="form-control" id="appearance"required>
+      </div>
+      <div class="mb-3">
+        <label for="price" class="form-label">price($)</label>
+        <input type="number" class="form-control" id="price"required>
+      </div>
+      <div class="mb-3">
+        <label for="wins" class="form-label">wins</label>
+        <input type="number" class="form-control" id="wins"required>
+      </div>
+      <div class="submitbutton">
+      <button id="submit" type="submit" class="btn-btn-primary">Submit</button>
+      </div>
+    </form>
+    
+    <div class="adi">
+      <button class="ads"><span><a href="index.html">HOME</a></span></button>
+    </div>
+    <script src="adm.js"></script>
+</body>
+</html>
