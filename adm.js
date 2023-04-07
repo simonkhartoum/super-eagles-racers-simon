@@ -52,7 +52,7 @@ function displayBikes(bikes) {
   });
 }
 function fetchBikes() {
-  fetch("db.json")
+  fetch("https://github.com/simonkhartoum/super-eagles-racers-simon/blob/main/db.json")
     .then((response) => response.json())
     .then((bikes) => bikes.forEach((bike) => displayBikes(bike)));
 }
@@ -83,7 +83,7 @@ collectFormData();
 
 //function to post bikes  in db.json file
 function postBikes(formData) {
-  fetch("db.json", {
+  fetch("https://github.com/simonkhartoum/super-eagles-racers-simon/blob/main/db.json", {
     method: "POST",
     headers: {
       "content-type": "application/json",
@@ -95,7 +95,7 @@ function postBikes(formData) {
 }
 
 function deleteRecord(id) {
-  fetch(`db.json/${id}`, {
+  fetch(`https://github.com/simonkhartoum/super-eagles-racers-simon/blob/main/db.json/${id}`, {
     method: "DELETE",
     headers: {
       "content-type": "application/json",
