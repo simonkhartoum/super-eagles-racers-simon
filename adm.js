@@ -95,7 +95,7 @@ function postBikes(formData) {
 }
 
 function deleteRecord(id) {
-  fetch(`https://github.com/simonkhartoum/super-eagles-racers-simon/blob/main/db.json/${id}`, {
+  fetch(`db.json/${id}`, {
     method: "DELETE",
     headers: {
       "content-type": "application/json",
