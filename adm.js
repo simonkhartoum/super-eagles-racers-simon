@@ -52,7 +52,7 @@ function displayBikes(bikes) {
   });
 }
 function fetchBikes() {
-  fetch("http://localhost:3000/bikes")
+  fetch("db.json")
     .then((response) => response.json())
     .then((bikes) => bikes.forEach((bike) => displayBikes(bike)));
 }
@@ -83,7 +83,7 @@ collectFormData();
 
 //function to post bikes  in db.json file
 function postBikes(formData) {
-  fetch("http://localhost:3000/bikes", {
+  fetch("db.json", {
     method: "POST",
     headers: {
       "content-type": "application/json",
@@ -95,7 +95,7 @@ function postBikes(formData) {
 }
 
 function deleteRecord(id) {
-  fetch(`http://localhost:3000/bikes/${id}`, {
+  fetch(`db.json/${id}`, {
     method: "DELETE",
     headers: {
       "content-type": "application/json",
@@ -111,7 +111,7 @@ console.log('edit clicked for our button', bikes.id);
 })
 function  editwins(id){
 
-    fetch(`http://localhost:3000/bikes/${id}`,{
+    fetch(`db.json/${id}`,{
 
       Method: "PATCH",
       headers:{
